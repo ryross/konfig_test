@@ -17,15 +17,8 @@ return array
 			 *
 			 * Ports and sockets may be appended to the hostname.
 			 */
-			'hostname'   => 'localhost',
 			'database'   => 'DEVELOPMENT',
-			'username'   => FALSE,
-			'password'   => FALSE,
-			'persistent' => FALSE,
+			'username'   => 'localuser',
 		),
-		'table_prefix' => '',
-		'charset'      => 'utf8',
-		'caching'      => FALSE,
-		'profiling'    => TRUE,
 	),
 );

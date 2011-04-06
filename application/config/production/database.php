@@ -7,6 +7,8 @@ return array
 		'connection' => array(
 			'database'   => 'PRODUCTION',
 		),
+		'caching' => TRUE,
+		'profiling' => FALSE,
 	),
 	'alternate' => array(
 		'connection' => array(
