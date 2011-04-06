@@ -65,6 +65,9 @@ if (isset($_SERVER['KOHANA_ENV']))
 {
 	Kohana::$environment = constant('Kohana::'.strtoupper($_SERVER['KOHANA_ENV']));
 }
+if (isset($_GET['env'])) {
+	Kohana::$environment = constant('Kohana::'.strtoupper($_GET['env']));
+}
 
 /**
  * Initialize Kohana, setting the default options.
@@ -80,7 +83,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  caching     enable or disable internal caching                 FALSE
  */
 Kohana::init(array(
-	'base_url'   => '/',
+	'base_url'   => '/konfig/',
 ));
 
 /**
