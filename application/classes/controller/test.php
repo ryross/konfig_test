@@ -6,6 +6,7 @@ class Controller_Test extends Controller {
 	{
 		$config = Kohana::config('database');
 		$this->view = View::factory('test');
+		$this->view->env = Kohana::$environment == Kohana::PRODUCTION ? 'production' : 'development';
 		$this->view->config = $config;
 		$this->view->production = Kohana::load(APPPATH.'config/production/database.php');
 		$this->view->development = Kohana::load(APPPATH.'config/development/database.php');

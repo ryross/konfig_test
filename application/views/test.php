@@ -1,6 +1,6 @@
 <a href="<?php echo url::base()?>test/?env=production">Switch to Production</a> 
 <a href="<?php echo url::base()?>test/?env=development">Switch to Development</a> 
-
+<h1>Current Environment: <?php echo $env; ?></h1>
 <h1>Final Config</h1>
 <?php echo debug::vars($config); ?>
 
