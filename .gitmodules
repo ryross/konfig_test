@@ -25,3 +25,6 @@
 [submodule "modules/unittest"]
 	path = modules/unittest
 	url = http://github.com/kohana/unittest.git
+[submodule "modules/konfig"]
+	path = modules/konfig
+	url = git://github.com/ryross/konfig.git
